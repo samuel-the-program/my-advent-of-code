@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <string>
 
 struct PartNumber {
 	int i;
@@ -14,7 +15,7 @@ bool isDigit(char c) {
 }
 
 int main() {
-	std::ifstream input{ "2023/inputs/day03-input.txt" };
+	std::ifstream input{ "../inputs/2023/day03-input.txt" };
 	if (!input.is_open()) std::cout << "file did not open\n";
 	
 	std::vector<std::string> engine{};

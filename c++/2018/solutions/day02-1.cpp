@@ -18,7 +18,7 @@ bool letterAmount(std::string_view s, int amt) {
 }
 
 int main() {
-	std::ifstream input{"inputs/day02-input.txt"};
+	std::ifstream input{"../inputs/2018/day02-input.txt"};
 	if (!input.is_open()) std::cout << "file not open\n";
 	
 	std::string s{};

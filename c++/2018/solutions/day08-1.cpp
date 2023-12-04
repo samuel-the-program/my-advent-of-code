@@ -31,7 +31,7 @@ int createNodes(std::vector<Node>& nodes, std::ifstream& tree) {
 }
 
 int main() {
-	std::ifstream input{ "inputs/day08-input.txt" };
+	std::ifstream input{ "../inputs/2018/day08-input.txt" };
 	if (!input.is_open()) std::cout << "file did not open\n";
 	
 	std::vector<Node> nodes{};

@@ -6,7 +6,7 @@
 #include <iterator>
 
 int main() {
-	std::ifstream input{ "2023/inputs/day01-input.txt" };
+	std::ifstream input{ "../inputs/2023/day01-input.txt" };
 	if (!input.is_open()) std::cout << "file did not open\n";
 	std::regex r{ "one|two|three|four|five|six|seven|eight|nine|\\d"};
 	std::vector<std::string> numbers{"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};

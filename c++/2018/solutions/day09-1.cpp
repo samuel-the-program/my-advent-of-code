@@ -11,7 +11,7 @@ int nextMarble(std::vector<int>& marbles) {
 }
 
 int main() {
-	std::ifstream input{ "inputs/day09-input.txt" };
+	std::ifstream input{ "../inputs/2018/day09-input.txt" };
 	if (!input.is_open()) std::cout << "file did not open\n";
 	std::string s{};
 	std::getline(input, s);

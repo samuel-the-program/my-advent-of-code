@@ -13,7 +13,7 @@ using Schedule = std::array<bool, 60>;
 int main() {
 	std::vector<std::string> lines{};
 	
-	std::ifstream input{ "inputs/day04-input.txt" };
+	std::ifstream input{ "../inputs/2018/day04-input.txt" };
 	std::string s{};
 	std::regex timeReg{ "\\[1518-(\\d+)-(\\d+) (\\d+):(\\d+)\\]" };
 	while (std::getline(input, s)) {

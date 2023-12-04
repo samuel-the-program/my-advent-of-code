@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <string>
 #include <unordered_map>
 #include <vector>
 #include <set>
@@ -10,7 +11,7 @@ int main() {
 	std::unordered_map<char, bool> finished{};
 	std::set<char> steps{};
 	std::vector<char> completedSteps{};
-	std::ifstream input{ "inputs/day07-input.txt" };
+	std::ifstream input{ "../inputs/2018/day07-input.txt" };
 	if (!input.is_open()) std::cout << "file is not open\n";
 	
 	std::string s{};

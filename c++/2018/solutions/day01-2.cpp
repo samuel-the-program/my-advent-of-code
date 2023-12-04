@@ -5,7 +5,7 @@
 #include <algorithm>
 
 int main() {
-	std::ifstream input{ "inputs/day01-input.txt" };
+	std::ifstream input{ "../inputs/2018/day01-input.txt" };
 	
 	if (!input.is_open())
 		std::cout << "failed to open file\n";

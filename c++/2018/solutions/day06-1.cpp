@@ -47,7 +47,7 @@ int closestPoint(const Point& checkPoint, std::vector<Point>& points) {
 }
 
 int main() {
-	std::ifstream input{ "inputs/day06-input.txt" };
+	std::ifstream input{ "../inputs/2018/day06-input.txt" };
 	if (!input.is_open()) std::cout << "file did not open\n";
 	std::vector<Point> points{};
 	std::string s{};

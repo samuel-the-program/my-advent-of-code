@@ -21,7 +21,7 @@ bool rectOverlap(Rect& r1, Rect& r2) {
 
 int main() {
 	std::vector<Rect> rects{};
-	std::ifstream input{ "inputs/day03-input.txt" };
+	std::ifstream input{ "../inputs/2018/day03-input.txt" };
 	if (!input.is_open()) std::cout << "file did not open\n";
 	
 	std::string s{};

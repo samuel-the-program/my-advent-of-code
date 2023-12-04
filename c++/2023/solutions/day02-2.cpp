@@ -4,7 +4,7 @@
 #include <unordered_map>
 
 int main() {
-	std::ifstream input{ "2023/inputs/day02-input.txt" };
+	std::ifstream input{ "../inputs/2023/day02-input.txt" };
 	if (!input.is_open()) std::cout << "file did not open\n";
 	
 	std::string s;

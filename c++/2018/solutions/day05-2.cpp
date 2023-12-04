@@ -24,7 +24,7 @@ int reactionSize(std::string& s) {
 }
 
 int main() {
-	std::ifstream input{ "inputs/day05-input.txt" };
+	std::ifstream input{ "../inputs/2018/day05-input.txt" };
 	if (!input.is_open()) std::cout << "failed to open file\n";
 	std::string polymer{};
 	input >> polymer;
