@@ -3,7 +3,7 @@ let input;
 
 function preload() {
     font = loadFont("fonts/SourceCodePro-Medium.ttf");
-    input = loadStrings("inputs/day01-input.txt");
+    input = loadStrings("../inputs/2023/day01-input.txt");
 }
 
 function setup() {
@@ -137,7 +137,7 @@ function draw() {
     noStroke();
     text("Total: " + total.toString().padStart(5, "0"), 380, 390);
     
-    frame += 67;
+    frame += 1;
     if (frame > 150) {
         if (!addedTotal) {
             addedTotal = true;
