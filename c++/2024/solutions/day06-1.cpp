@@ -2,14 +2,21 @@
 #include <string>
 #include <fstream>
 #include <vector>
+#include <set>
 #include <algorithm>
 
 struct Coord {
     int x = 0;
     int y = 0;
 };
-bool operator==(Coord a, Coord b) {
+
+bool operator==(const Coord& a, const Coord& b) {
 	return a.x == b.x && a.y == b.y;
+}
+
+bool operator<(const Coord& a, const Coord& b) {
+	if (a.x != b.x) return a.x < b.x;
+    return a.y < b.y; 
 }
 
 bool validPos(int x, int y, const std::vector<std::string>& grid) {
@@ -34,7 +41,7 @@ int main() {
 	}
 
     Coord dir{0, -1};
-    std::vector<Coord> path{};
+    std::set<Coord> path{};
     while (validPos(guardPos.x, guardPos.y, grid)) {
         Coord nextPos{guardPos.x + dir.x, guardPos.y + dir.y};
         if (validPos(nextPos.x, nextPos.y, grid) && grid[nextPos.y][nextPos.x] == '#') {
@@ -42,9 +49,7 @@ int main() {
             dir.x = -dir.y;
             dir.y = temp;
         } else {
-            if (std::find(path.begin(), path.end(), guardPos) == path.end()) {
-                path.push_back(guardPos);
-            }
+            path.insert(guardPos);
             grid[guardPos.y][guardPos.x] = 'X';
             guardPos = nextPos;
         }
