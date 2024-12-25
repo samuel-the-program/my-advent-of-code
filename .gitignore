@@ -2,3 +2,4 @@ inputs/
 *.bat
 hio/
 build/
+.vscode/
